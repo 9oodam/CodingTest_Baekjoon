@@ -16,10 +16,6 @@ function isPalindrome2(str) {
             let lastSplit = strArr.slice(0, strArr.length - 1 - i).concat(strArr.slice(strArr.length - i)).join("");
             return isPalindrome(firstSplit) || isPalindrome(lastSplit);
         }
-
-        if(i == Math.floor(strArr.length - 1 - i)) {
-            return isPalindrome(strArr.slice(i, 1).join(""));
-        }
     }
 }
 
